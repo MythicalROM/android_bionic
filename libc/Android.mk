@@ -498,7 +498,7 @@ libc_common_cflags := \
     -I$(LOCAL_PATH)/private \
     -DPOSIX_MISTAKE \
     -DLOG_ON_HEAP_ERROR \
-    -Wall -Wextra
+    -Wall -Wextra -Wno-strict-aliasing
 
 ifeq ($(strip $(DEBUG_BIONIC_LIBC)),true)
   libc_common_cflags += -DDEBUG
